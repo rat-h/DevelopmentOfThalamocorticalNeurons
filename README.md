@@ -35,3 +35,6 @@ Examples
 | `python cell.py P07-selected-checked-gmin.json 2 0.1` | `python cell.py P07-selected-checked-gmin.json 280 0.1` |
 |:-----------------------------------------------------:|:-------------------------------------------------------:|
 |![](examples/Figure_1.png)                             |![](examples/Figure_2.png)                               |
+
+### Citation
+Please use [DOI: 10.5281/zenodo.7312024](https://doi.org/10.5281/zenodo.7312024) as the reference for the database.
