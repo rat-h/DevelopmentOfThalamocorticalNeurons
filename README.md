@@ -29,6 +29,7 @@ The current database `P07-selected-checked-gmin.json` (last updated 2022-09-21) 
 ### Try a neuron model in the database
 To try neurons in the database in the standard current-clamp protocol, you can run `cell.py` with at least two command line arguments: name of the database file and neuron ID.
 The third optional command line argument will be interpreted as the amplitude value of the current-clamp protocol.
+**Note**  `cell.py` does not read initial conditions for steady-state from the database, and therefore transient dynamics are expected.
 
 Examples
 

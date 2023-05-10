@@ -140,11 +140,17 @@ if __name__ == "__main__":
     xc = dLGN()
     for p in prms:
         exec(f'xc.{p}=prms[\'{p}\']')
-    xc.setcable()
+    if 'setcable' in j:
+        try:
+            exec('xc.{}()'.format(j['setcable']))
+        except BaseException as e:
+            print(f'Cannot setup cable: {e}')
+            exit(1)
     # ic = h.IClamp(0.5, sec=xc.soma)
     # ic.amp = 4.
     ic = h.IClamp(0.5, sec=xc.soma)
     ic.amp = 1.2 if len(sys.argv) < 4 else float(sys.argv[3])
+    print(f"SET: DB={sys.argv[1]}, ID={nid}, Iapp={ic.amp:0.02f}, Nseg={xc.axon.nseg}")
     ic.delay = 1500.
     ic.dur   = 1000.
     t,v1,c1,v2,c2 = h.Vector(),h.Vector(),h.Vector(),h.Vector(),h.Vector()
