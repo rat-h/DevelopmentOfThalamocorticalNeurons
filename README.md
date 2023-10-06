@@ -2,6 +2,10 @@
 
 The current database contains only models of thalamocortical relay neurons (TC) in the mouse visual thalamus (dorsal lateral geniculate nucleus) recorded at postnatal day 7 (P7).
 
+## NOTE
+Due to the GitHub enforcement of 2fa, which requires me to share my phone number with Microsoft or install an untrusted Microsoft application on my phone, any updates to this repository will be pushed to its clone at GitLab or to my personal git repository. Please see all updates [here](https://rth.r-a-r.org). Sorry, there should be something private in this life where Microsoft, Google or others don't put their noses.
+
+
 ### Software
 The model of TC neuron is implemented in `NEURON` simulator.
 ```
